@@ -155,13 +155,23 @@ Loans are among a bank's assets, and their contribution to RWA depends on their 
 
 ### 4.2 Approaches to estimating risk parameters
 
-The Standardized Approach (SA) uses regulatory rules to determine risk weights. Under the Internal Ratings-Based (IRB) approaches, banks use internal risk estimates subject to regulatory approval. In broad terms:
+Compare the approaches by which party determines each risk input:
 
-| Approach | How risk is assessed |
-| --- | --- |
-| Standardized Approach (SA) | Regulatory rules determine risk weights. |
-| Foundation IRB (FIRB) | The bank estimates PD; supervisory values generally apply to LGD and EAD. |
-| Advanced IRB (AIRB) | The bank estimates PD, LGD, and EAD. |
+| Risk input | Standardized Approach (SA) | Foundation IRB (FIRB) | Advanced IRB (AIRB) |
+| --- | --- | --- | --- |
+| Probability of default (PD) | Regulatory rules | Bank estimate | Bank estimate |
+| Loss given default (LGD) | Regulatory rules | Generally supervisory values | Bank estimate |
+| Exposure at default (EAD) | Regulatory rules | Generally supervisory values | Bank estimate |
+| Risk weights | Set by regulatory rules | Calculated using approved IRB parameters | Calculated using approved IRB parameters |
+
+<details>
+<summary>What do the approaches mean?</summary>
+
+- **SA:** Applies regulator-defined rules and risk weights.
+- **FIRB:** The bank estimates PD, while supervisory values generally apply to LGD and EAD.
+- **AIRB:** The bank estimates PD, LGD, and EAD, subject to regulatory approval and requirements.
+
+</details>
 
 The precise requirements and permitted use of estimates depend on the applicable Basel rules and local regulator. Internal approaches are not simply a way for banks to lend more; they require regulatory approval and controls.
 
