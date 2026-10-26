@@ -18,6 +18,10 @@
   - [4.1 Capital adequacy ratio (CAR)](#41-capital-adequacy-ratio-car)
   - [4.2 Approaches to estimating risk parameters](#42-approaches-to-estimating-risk-parameters)
   - [4.3 Credit scores, ratings, and model inputs](#43-credit-scores-ratings-and-model-inputs)
+- [5. Dependent and independent variables](#5-dependent-and-independent-variables)
+  - [5.1 Probability of default (PD) model](#51-probability-of-default-pd-model)
+  - [5.2 Loss given default (LGD) model](#52-loss-given-default-lgd-model)
+  - [5.3 Exposure at default (EAD) model](#53-exposure-at-default-ead-model)
 
 ## 1. What is credit risk?
 
@@ -177,3 +181,30 @@ For a mortgage, loan-to-value (LTV) compares the loan balance with the property'
 For example, a ₹40 lakh loan against a property valued at ₹50 lakh has an LTV of 80%. LTV can change as the loan is repaid or the property value changes.
 
 Statistical methods depend on the target and data. Logistic regression is commonly used to estimate PD. Beta regression can be suitable for bounded LGD rates, while EAD methods depend on the product and target definition. No single model type is required for every portfolio.
+
+## 5. Dependent and independent variables
+
+A credit risk model uses a **dependent variable**, also called the target, to represent the outcome it estimates. **Independent variables**, also called predictors or features, are information used by the model to estimate that outcome. Inputs should be relevant to the prediction date and available when the estimate is made.
+
+### 5.1 Probability of default (PD) model
+
+A PD model estimates the likelihood that a borrower will default within a defined period, such as 12 months.
+
+- **Target:** A binary outcome, commonly coded `1` for default and `0` for no default during the defined period.
+- **Possible predictors:** Borrower characteristics such as income, employment, and credit history; loan features such as amount, interest rate, and term; behavior such as missed payments, credit utilization, and recent credit enquiries; and macroeconomic indicators such as GDP growth, inflation, and unemployment.
+
+### 5.2 Loss given default (LGD) model
+
+An LGD model estimates the proportion of exposure expected to be lost if default occurs, after recoveries.
+
+- **Target:** A loss rate, commonly represented between 0 and 1 or as a percentage from 0% to 100%. A simplified definition is `LGD = loss after recoveries / EAD`.
+- **Possible predictors:** Collateral type and loan-to-value ratio; loan amount and whether it is secured; borrower credit score and financial condition; and relevant conditions such as property market trends and recovery experience.
+
+### 5.3 Exposure at default (EAD) model
+
+An EAD model estimates the amount the bank is exposed to when default occurs.
+
+- **Target:** A monetary amount representing exposure at the point of default.
+- **Possible predictors:** Credit limit, current utilization, and loan or facility type; borrower usage and repayment behavior; and relevant macroeconomic conditions, such as interest rate trends or an economic downturn.
+
+The target definition and prediction horizon should be set consistently for each portfolio. Predictors should be checked for data quality, relevance, and availability at the time the model is intended to make its prediction.
