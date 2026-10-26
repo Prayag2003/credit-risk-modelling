@@ -14,6 +14,10 @@
   - [3.3 Scenario weighting and discounting](#33-scenario-weighting-and-discounting)
   - [3.4 IFRS 9 stages](#34-ifrs-9-stages)
   - [3.5 ECL allowance](#35-ecl-allowance)
+- [4. Capital adequacy and credit risk models](#4-capital-adequacy-and-credit-risk-models)
+  - [4.1 Capital adequacy ratio (CAR)](#41-capital-adequacy-ratio-car)
+  - [4.2 Approaches to estimating risk parameters](#42-approaches-to-estimating-risk-parameters)
+  - [4.3 Credit scores, ratings, and model inputs](#43-credit-scores-ratings-and-model-inputs)
 
 ## 1. What is credit risk?
 
@@ -132,3 +136,44 @@ A loan can move from Stage 1 to Stage 2 when credit risk has increased significa
 The ECL allowance, also called a loss allowance, is the amount recognized for estimated credit losses under the applicable accounting rules. It is not necessarily cash held in a separate account. Recognizing or increasing the allowance generally reduces reported profit, all else equal.
 
 The allowance is not the actual loss ultimately realized. It can change as borrower risk, economic forecasts, and expected recoveries change.
+
+## 4. Capital adequacy and credit risk models
+
+Banks fund assets such as loans through liabilities, such as deposits, and equity capital. Regulatory capital requirements help ensure a bank can absorb losses and continue operating.
+
+### 4.1 Capital adequacy ratio (CAR)
+
+The capital adequacy ratio (CAR), also called the capital-to-risk-weighted-assets ratio, compares a bank's regulatory capital with its risk-weighted assets (RWA):
+
+`CAR = Regulatory capital / Risk-weighted assets × 100%`
+
+Loans are among a bank's assets, and their contribution to RWA depends on their risk treatment. Basel sets international standards, while local regulators set and apply requirements. The often-quoted 8% is a Basel minimum total capital ratio, not a universal complete requirement for every bank: applicable buffers and local rules can require more.
+
+### 4.2 Approaches to estimating risk parameters
+
+The Standardized Approach (SA) uses regulatory rules to determine risk weights. Under the Internal Ratings-Based (IRB) approaches, banks use internal risk estimates subject to regulatory approval. In broad terms:
+
+| Approach | How risk is assessed |
+| --- | --- |
+| Standardized Approach (SA) | Regulatory rules determine risk weights. |
+| Foundation IRB (FIRB) | The bank estimates PD; supervisory values generally apply to LGD and EAD. |
+| Advanced IRB (AIRB) | The bank estimates PD, LGD, and EAD. |
+
+The precise requirements and permitted use of estimates depend on the applicable Basel rules and local regulator. Internal approaches are not simply a way for banks to lend more; they require regulatory approval and controls.
+
+### 4.3 Credit scores, ratings, and model inputs
+
+Individual credit scores and entity credit ratings are related but distinct:
+
+- **Credit scores** summarize an individual's credit history. Examples include FICO scores, commonly reported on a 300 to 850 scale, and credit bureau scores such as CIBIL scores in India.
+- **Credit ratings** such as S&P Global Ratings' AAA, AA, and BBB categories generally assess the creditworthiness of entities or debt instruments, rather than providing an individual's bureau score.
+
+Credit risk models may use relevant borrower and facility information, such as repayment and enquiry history, income, credit bureau data, loan type, and collateral. Variables must be selected and governed according to applicable law and model-risk policies.
+
+For a mortgage, loan-to-value (LTV) compares the loan balance with the property's value:
+
+`LTV = Loan balance / Property value × 100%`
+
+For example, a ₹40 lakh loan against a property valued at ₹50 lakh has an LTV of 80%. LTV can change as the loan is repaid or the property value changes.
+
+Statistical methods depend on the target and data. Logistic regression is commonly used to estimate PD. Beta regression can be suitable for bounded LGD rates, while EAD methods depend on the product and target definition. No single model type is required for every portfolio.
