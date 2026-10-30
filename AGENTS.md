@@ -1,4 +1,4 @@
-<![CDATA[# Project Instructions
+# Project Instructions
 
 ## Documentation Rules
 
@@ -36,4 +36,3 @@
 20. Document model assumptions, limitations, and the rationale for choosing a specific approach.
 21. Use reproducible random seeds where randomness is involved.
 22. Log model performance metrics and include them in notebook outputs.
-]]>

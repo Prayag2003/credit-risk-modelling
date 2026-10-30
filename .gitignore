@@ -1,4 +1,4 @@
-<![CDATA[# Virtual environments
+# Virtual environments
 .venv/
 venv/
 env/
@@ -36,4 +36,3 @@ data/*.h5
 models/
 *.joblib
 *.pkl
-]]>
