@@ -1,15 +1,9 @@
 # Credit Risk Modelling
 
-**An AI-assisted quantitative finance project for estimating credit losses using PD, LGD, and EAD models.**
-
 [![Python 3.14+](https://img.shields.io/badge/Python-3.14%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![AI Assisted](https://img.shields.io/badge/AI-Assisted%20SDLC-blueviolet?logo=google&logoColor=white)](#6-ai-assisted-development)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
----
-
-*Built with an AI-assisted software development lifecycle. Every commit, review, and documentation pass is human-guided and AI-augmented.*
 
 </div>
 
